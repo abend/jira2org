@@ -90,11 +90,10 @@ https://mycompany.atlassian.net"
 
 (defcustom j2o-issue-format
   ;; TODO project name and key, assignee displayName, issuetype name, description, priority name
-  "* TODO {PROJECT-NAME}: {SUMMARY}
+  "* TODO {PROJECT-NAME}: [[{URL}][{SUMMARY}]]
   {PRIORITY} {ISSUE-TYPE} for {ASSIGNEE}
   {DUE-DATE}
-  {DESCRIPTION}
-  {URL}"
+  {DESCRIPTION}"
   "String used to format an issue.
 Syntax is {FIELD}.  Valid values for FIELD are: 
 PRIORITY, ISSUE-TYPE, PROJECT-NAME, PROJECT-KEY, SUMMARY, ASSIGNEE,
